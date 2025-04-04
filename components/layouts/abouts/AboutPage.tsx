@@ -198,7 +198,7 @@ const AboutPage = () => {
 
                 {/* Leadership Team */}
                 <section className="py-16">
-                    <div className="container">
+                    <div className="container mx-auto">
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
