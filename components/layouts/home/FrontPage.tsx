@@ -37,7 +37,7 @@ const FrontPage = () => {
                             src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743750098/high-piston_twfiw0.png"
                             alt="Global manufacturing facility"
                             fill
-                            className="object-cover opacity-20 dark:opacity-10"
+                            className="object-cover object-center opacity-20 dark:opacity-10"
                             priority
                         />
                     </div>
@@ -135,25 +135,25 @@ const FrontPage = () => {
                                 {
                                     title: "Pistons",
                                     description: "High-performance pistons engineered for maximum durability and thermal efficiency.",
-                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1743756113/piston_ygly9t.png",
+                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691687902/piston_dbfew1.jpg",
                                     link: "/products/pistons",
                                 },
                                 {
                                     title: "Piston Pins",
                                     description: "Precision-manufactured pins designed for optimal load distribution and reduced friction.",
-                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1743756498/piston-pins_ypvjps.png",
+                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691858760/pistonpin_2_uzvt1d.jpg",
                                     link: "/products/pins",
                                 },
                                 {
                                     title: "Piston Rings",
                                     description: "Advanced rings providing superior sealing, oil control, and heat transfer properties.",
-                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1743756272/piston-rings_vyet7f.png",
+                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691685606/dreamstime_xxl_78054868_xuyndp.jpg",
                                     link: "/products/rings",
                                 },
                                 {
                                     title: "Cylinder Liners",
                                     description: "Durable liners with excellent wear resistance and thermal conductivity characteristics.",
-                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1743751874/cylinder-liner_gm0lqt.png",
+                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1685792698/meghdoot/4_dl12uk.jpg",
                                     link: "/products/liners",
                                 },
                             ].map((product, index) => (
@@ -217,7 +217,7 @@ const FrontPage = () => {
                                         </div>
                                         <h3 className="text-xl font-bold">Global Quality Standards</h3>
                                         <p className="text-muted-foreground">
-                                            ISO 9001:2015, IATF 16949, and ISO 14001 certified manufacturing processes with rigorous quality
+                                            ISO 9001:2015 certified manufacturing processes with rigorous quality
                                             control.
                                         </p>
                                     </CardContent>
@@ -296,64 +296,6 @@ const FrontPage = () => {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        </motion.div>
-                    </div>
-                </section>
-
-                {/* Testimonials */}
-                <section className="py-16">
-                    <div className="container mx-auto">
-                        <motion.div
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            variants={staggerContainer}
-                            className="text-center mb-12"
-                        >
-                            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-4">
-                                Trusted by Global Leaders
-                            </motion.h2>
-                            <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                Our components power vehicles manufactured by the worlds leading automotive companies.
-                            </motion.p>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.8 }}
-                            className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center"
-                        >
-                            {Array.from({ length: 6 }).map((_, i) => (
-                                <div key={i} className="w-32 h-32 relative grayscale hover:grayscale-0 transition-all duration-300">
-                                    <Image
-                                        src={`/placeholder-logo.svg?text=Logo${i + 1}`}
-                                        alt={`Automotive Client ${i + 1}`}
-                                        fill
-                                        className="object-contain"
-                                    />
-                                </div>
-                            ))}
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            className="mt-16 bg-muted rounded-lg p-8"
-                        >
-                            <div className="max-w-3xl mx-auto text-center">
-                                <p className="text-lg italic mb-6">
-                                    Meghdoot Pistons has been our trusted supplier for over a decade. Their commitment to quality,
-                                    innovation, and global support has been instrumental in our success across international markets.
-                                </p>
-                                <div>
-                                    <p className="font-bold">Thomas Schmidt</p>
-                                    <p className="text-sm text-muted-foreground">Chief Procurement Officer, Global Motors Inc.</p>
-                                </div>
-                            </div>
                         </motion.div>
                     </div>
                 </section>

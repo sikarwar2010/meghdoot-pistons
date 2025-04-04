@@ -34,14 +34,14 @@ const AboutPage = () => {
                 <section className="relative py-20 md:py-28 overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="/placeholder.svg?height=1080&width=1920"
+                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691655978/home2_hmyrxy.jpg"
                             alt="Manufacturing facility"
                             fill
                             className="object-cover opacity-20 dark:opacity-10"
                             priority
                         />
                     </div>
-                    <div className="container relative z-10">
+                    <div className="container relative z-10 mx-auto">
                         <motion.div
                             initial="hidden"
                             animate="visible"
@@ -268,7 +268,7 @@ const AboutPage = () => {
 
                 {/* Milestones */}
                 <section className="py-16 bg-muted/50">
-                    <div className="container">
+                    <div className="container mx-auto">
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
@@ -358,7 +358,7 @@ const AboutPage = () => {
 
                 {/* CTA Section */}
                 <section className="py-16">
-                    <div className="container">
+                    <div className="container mx-auto">
                         <motion.div
                             initial="hidden"
                             whileInView="visible"
