@@ -1,19 +1,18 @@
-import React from 'react';
-import AboutPage from "@/components/layouts/abouts/AboutPage";
-import type { Metadata } from 'next';
+import React from 'react'
+import PistonsPage from '@/components/layouts/products/PistonsPage'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'About',
+    title: 'Pistons',
     description: 'Leading global exporter of precision-engineered automotive components since 1957, serving customers across 50+ countries with premium quality pistons, pins, rings, and cylinder liners.',
 }
 
-const About = () => {
-
+const Pistons = () => {
     return (
         <div>
-            <AboutPage />
+            <PistonsPage />
         </div>
     )
 }
 
-export default About;
+export default Pistons;

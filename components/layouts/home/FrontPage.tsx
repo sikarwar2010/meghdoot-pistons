@@ -31,7 +31,7 @@ const FrontPage = () => {
         <>
             <div className="flex flex-col min-h-screen">
                 {/* Hero Section */}
-                <section className="relative py-20 md:py-28 lg:py-36 overflow-hidden">
+                <section className="relative py-20 md:py-28 overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <Image
                             src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743750098/high-piston_twfiw0.png"
