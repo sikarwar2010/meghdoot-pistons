@@ -1,9 +1,10 @@
 import React from 'react'
+import CylinderLinersPage from '@/components/layouts/products/CylinderLinerPage';
 
 const Cylinderliners = () => {
     return (
         <div>
-            <h1>Cylinder Liners</h1>
+            <CylinderLinersPage />
         </div>
     )
 }

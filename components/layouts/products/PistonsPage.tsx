@@ -380,10 +380,10 @@ const PistonsPage = () => {
                 </section>
 
                 {/* customer Data */}
+                <div className='py-16 bg-muted/30'>
                 <CustomerList />
-
-                {/* customer List */}
                 <CustomerData />
+                </div>
 
                 {/* Manufacturing Process */}
                 <section className="py-16 bg-muted/50">

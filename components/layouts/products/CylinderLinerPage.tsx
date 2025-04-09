@@ -1,15 +1,16 @@
-"use client";
-import React from "react";
+"use client"
+import React from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, Download, FileText, } from "lucide-react"
+import { ArrowRight, CheckCircle, Download, FileText, Globe } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { ProductImageCarousel } from "./product-carousel";
-import CustomerList from "./CustomerList";
-import CustomerData from "./CustomerData";
+import { ProductImageCarousel } from "./product-carousel"
+import CustomerList from "./CustomerList"
+import CustomerData from "./CustomerData"
+
 
 const pistonImages = [
     {
@@ -34,7 +35,7 @@ const pistonImages = [
     },
 ]
 
-const PistonRingsPage = () => {
+export default function CylinderLinersPage() {
     const fadeIn = {
         hidden: { opacity: 0, y: 20 },
         visible: {
@@ -60,14 +61,14 @@ const PistonRingsPage = () => {
             <section className="relative py-20 md:py-28 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743756272/piston-rings_vyet7f.png"
-                        alt="Piston Rings manufacturing"
+                        src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743751874/cylinder-liner_gm0lqt.png"
+                        alt="Cylinder Liners manufacturing"
                         fill
                         className="object-cover opacity-20 dark:opacity-10"
                         priority
                     />
                 </div>
-                <div className="container relative z-10 mx-auto">
+                <div className="container relative z-10">
                     <motion.div
                         initial="hidden"
                         animate="visible"
@@ -75,17 +76,17 @@ const PistonRingsPage = () => {
                         className="max-w-3xl mx-auto text-center space-y-6"
                     >
                         <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl font-bold tracking-tight">
-                            Advanced <span className="text-primary">Piston Rings</span>
+                            Durable <span className="text-primary">Cylinder Liners</span>
                         </motion.h1>
                         <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground">
-                            Exported to global markets, our piston rings provide superior sealing, oil control, and heat transfer for
-                            optimal engine performance.
+                            Exported to global markets, our cylinder liners provide exceptional wear resistance, thermal conductivity,
+                            and dimensional stability for optimal engine performance.
                         </motion.p>
                     </motion.div>
                 </div>
             </section>
 
-            {/* Product Variants Carousel */}
+            {/* Product Image Carousel */}
             <section className="py-12 bg-muted/30">
                 <div className="container mx-auto">
                     <motion.div
@@ -113,34 +114,34 @@ const PistonRingsPage = () => {
                         >
                             <h2 className="text-3xl font-bold">Product Overview</h2>
                             <p className="text-muted-foreground">
-                                Meghdoot Pistons manufactures premium piston rings that are exported to automotive manufacturers
-                                worldwide. Our rings are designed to provide optimal sealing, oil control, and heat transfer while
-                                minimizing friction and wear.
+                                Meghdoot Pistons manufactures premium cylinder liners that are exported to automotive manufacturers
+                                worldwide. Our liners are designed to provide optimal wear resistance, thermal conductivity, and
+                                dimensional stability for extended engine life.
                             </p>
                             <p className="text-muted-foreground">
-                                Using advanced materials and coating technologies, our piston rings offer superior performance and
-                                durability in all operating conditions. Each ring undergoes rigorous testing to meet international
-                                quality standards and your specific requirements.
+                                Using advanced materials and manufacturing techniques, our cylinder liners offer superior performance in
+                                all operating conditions. Each liner undergoes rigorous testing to meet international quality standards
+                                and your specific requirements.
                             </p>
                             <div className="space-y-2">
                                 <div className="flex items-center gap-2">
-                                    <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>PVD coating for reduced friction</span>
+                                    <CheckCircle className="h-5 w-5 text-primary shrink-0" />
+                                    <span>Superior wear resistance</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Superior sealing properties</span>
+                                    <CheckCircle className="h-5 w-5 text-primary shrink-0" />
+                                    <span>Excellent thermal conductivity</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Excellent oil control</span>
+                                    <CheckCircle className="h-5 w-5 text-primary shrink-0" />
+                                    <span>Precision-honed surfaces</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Enhanced durability and longevity</span>
+                                    <CheckCircle className="h-5 w-5 text-primary shrink-0" />
+                                    <span>Consistent dimensional stability</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <CheckCircle className="h-5 w-5 text-primary" />
+                                    <CheckCircle className="h-5 w-5 text-primary shrink-0" />
                                     <span>Global export compliance certified</span>
                                 </div>
                             </div>
@@ -153,8 +154,8 @@ const PistonRingsPage = () => {
                             className="relative h-[400px] rounded-lg overflow-hidden"
                         >
                             <Image
-                                src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691685606/dreamstime_xxl_78054868_xuyndp.jpg"
-                                alt="Advanced piston rings"
+                                src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1685792698/meghdoot/4_dl12uk.jpg"
+                                alt="Durable cylinder liners"
                                 fill
                                 className="object-cover"
                             />
@@ -180,7 +181,7 @@ const PistonRingsPage = () => {
                         className="max-w-3xl mx-auto text-center space-y-6"
                     >
                         <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold">
-                            Ready to Source Premium Piston Rings?
+                            Ready to Source Premium Cylinder Liners?
                         </motion.h2>
                         <motion.p variants={fadeIn} className="text-muted-foreground text-lg">
                             Contact our export team to discuss your specific requirements and discover how our products can enhance
@@ -235,14 +236,14 @@ const PistonRingsPage = () => {
                             {
                                 title: "Piston Pins",
                                 description: "Precision-manufactured pins designed for optimal load distribution and reduced friction.",
-                                image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1685786203/meghdoot/rings_eg65az.jpg",
+                                image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691858760/pistonpin_2_uzvt1d.jpg",
                                 link: "/pistonpins",
                             },
                             {
-                                title: "Cylinder Liners",
-                                description: "Durable liners with excellent wear resistance and thermal conductivity characteristics.",
-                                image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1685792698/meghdoot/4_dl12uk.jpg",
-                                link: "/cylinderliners",
+                                title: "Piston Rings",
+                                description: "Advanced rings providing superior sealing, oil control, and heat transfer properties.",
+                                image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691685606/dreamstime_xxl_78054868_xuyndp.jpg",
+                                link: "/pistonrings",
                             },
                         ].map((product, index) => (
                             <motion.div key={index} variants={fadeIn}>
@@ -273,5 +274,3 @@ const PistonRingsPage = () => {
         </div>
     )
 }
-
-export default PistonRingsPage
