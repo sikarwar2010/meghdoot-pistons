@@ -60,7 +60,7 @@ export default function PistonPinsPage() {
                 <section className="relative py-20 md:py-28 overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743756498/piston-pins_ypvjps.png"
+                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691858760/pistonpin_2_uzvt1d.jpg"
                             alt="Piston Pins manufacturing"
                             fill
                             className="object-cover opacity-20 dark:opacity-10"
@@ -153,7 +153,7 @@ export default function PistonPinsPage() {
                                 className="relative h-[400px] rounded-lg overflow-hidden"
                             >
                                 <Image
-                                    src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691685606/dreamstime_xxl_78054868_xuyndp.jpg"
+                                    src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691858760/pistonpin_2_uzvt1d.jpg"
                                     alt="Precision piston pins"
                                     fill
                                     className="object-cover"

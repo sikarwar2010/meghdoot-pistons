@@ -1,12 +1,11 @@
 "use client";
 import React from "react";
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, Download, FileText, } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { ArrowRight, CheckCircle, } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { ProductImageCarousel } from "./product-carousel";
 import CustomerList from "./CustomerList";
 import CustomerData from "./CustomerData";
@@ -101,7 +100,7 @@ const PistonRingsPage = () => {
             </section>
 
             {/* Product Overview */}
-            <section className="py-16">
+            <section className="py-16 bg-muted/30">
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <motion.div
