@@ -7,7 +7,31 @@ import { motion } from "framer-motion"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { ProductImageCarousel } from './product-carousel';
+import CustomerData from './CustomerList';
 
+const pistonImages = [
+    {
+        id: "1",
+        src: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691655978/home1_tsgxb9.jpg",
+        alt: "High-performance automotive piston",
+    },
+    {
+        id: "2",
+        src: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691655978/home2_hmyrxy.jpg",
+        alt: "Racing piston with dome crown",
+    },
+    {
+        id: "3",
+        src: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691659786/home3_mf2azy.jpg",
+        alt: "Diesel engine piston with cooling gallery",
+    },
+    {
+        id: "4",
+        src: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691655978/home4_jmxnkp.jpg",
+        alt: "Lightweight forged piston for performance applications",
+    },
+]
 
 const PistonsPage = () => {
     const fadeIn = {
@@ -55,6 +79,21 @@ const PistonsPage = () => {
                             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground">
                                 Engineered for maximum performance, durability, and thermal efficiency in the most demanding applications.
                             </motion.p>
+                        </motion.div>
+                    </div>
+                </section>
+
+                {/* Product Variants Carousel */}
+                <section className="py-12 bg-muted/30">
+                    <div className="container mx-auto">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="max-w-4xl mx-auto"
+                        >
+                            <ProductImageCarousel images={pistonImages} title="" />
                         </motion.div>
                     </div>
                 </section>
@@ -112,7 +151,7 @@ const PistonsPage = () => {
                                 className="relative h-[400px] rounded-lg overflow-hidden"
                             >
                                 <Image
-                                    src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691655978/home1_tsgxb9.jpg"
+                                    src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691687902/piston_dbfew1.jpg"
                                     alt="High-performance pistons"
                                     fill
                                     className="object-cover"
@@ -218,10 +257,6 @@ const PistonsPage = () => {
                                             A piston with an Alfin ring insert, which is a steel ring cast into the aluminum piston crown.
                                         </p>
                                         <ul className="space-y-2">
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Non-magnetic means it won’t interfere with magnetic sensors (e.g., in diesel engines)</span>
-                                            </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
                                                 <span>Alfin ring provides better strength and wear resistance at the top ring groove</span>
@@ -343,75 +378,8 @@ const PistonsPage = () => {
                     </div>
                 </section>
 
-                {/* Technical Specifications */}
-                <section className="py-16">
-                    <div className="container mx-auto">
-                        <motion.div
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            variants={staggerContainer}
-                            className="text-center mb-12"
-                        >
-                            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-4">
-                                Technical Specifications
-                            </motion.h2>
-                            <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                Our pistons are manufactured to precise specifications using advanced materials and technologies.
-                            </motion.p>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6 }}
-                            className="overflow-x-auto"
-                        >
-                            <table className="w-full border-collapse">
-                                <thead>
-                                    <tr className="bg-muted">
-                                        <th className="border p-3 text-left">Type of Piston</th>
-                                        <th className="border p-3 text-left">Material</th>
-                                        <th className="border p-3 text-left">Special Features</th>
-                                        <th className="border p-3 text-left">Max Operating Temp</th>
-                                        <th className="border p-3 text-left">Applications</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Normal Type</td>
-                                        <td className="border p-3">Cast Aluminum Alloy / Cast Iron</td>
-                                        <td className="border p-3">Lightweight, good thermal conductivity, simple design</td>
-                                        <td className="border p-3">~300°C – 350°C</td>
-                                        <td className="border p-3">General-purpose engines (bikes, cars)</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Non-Magnetic Alfin Ring</td>
-                                        <td className="border p-3">Aluminum alloy + Alfin (steel) insert</td>
-                                        <td className="border p-3">Steel ring groove, non-magnetic, wear-resistant</td>
-                                        <td className="border p-3">~350°C – 400°C</td>
-                                        <td className="border p-3">Diesel engines, heavy-duty trucks</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Oil-Cooling Type</td>
-                                        <td className="border p-3">Aluminum alloy with internal oil gallery</td>
-                                        <td className="border p-3">Oil passage or cooling gallery for piston crown cooling</td>
-                                        <td className="border p-3">~400°C – 450°C</td>
-                                        <td className="border p-3">Turbocharged & performance engines</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Steel Strip Type</td>
-                                        <td className="border p-3">Aluminum alloy + steel insert</td>
-                                        <td className="border p-3">Steel reinforcement in skirt/ring grooves, high wear resistance</td>
-                                        <td className="border p-3">~350°C – 400°C</td>
-                                        <td className="border p-3">High load & high RPM engines</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </motion.div>
-                    </div>
-                </section>
+                {/* customer Data */}
+                <CustomerData />
 
                 {/* Manufacturing Process */}
                 <section className="py-16 bg-muted/50">
