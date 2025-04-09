@@ -142,10 +142,10 @@ const PistonsPage = () => {
 
                         <Tabs defaultValue="automotive" className="w-full">
                             <TabsList className="grid grid-cols-2 md:grid-cols-4 w-full mb-8">
-                                <TabsTrigger value="automotive">Automotive</TabsTrigger>
-                                <TabsTrigger value="racing">Racing</TabsTrigger>
-                                <TabsTrigger value="industrial">Industrial</TabsTrigger>
-                                <TabsTrigger value="marine">Marine</TabsTrigger>
+                                <TabsTrigger value="automotive">Normal Type Piston</TabsTrigger>
+                                <TabsTrigger value="racing">Non-Magnetic Alfin Ring Type Piston</TabsTrigger>
+                                <TabsTrigger value="industrial">Oil-Cooling Type Piston</TabsTrigger>
+                                <TabsTrigger value="marine">Steel Strip Type Piston</TabsTrigger>
                             </TabsList>
 
                             <TabsContent value="automotive">
@@ -164,27 +164,26 @@ const PistonsPage = () => {
                                         />
                                     </div>
                                     <div className="space-y-4">
-                                        <h3 className="text-2xl font-bold">Automotive Pistons</h3>
+                                        <h3 className="text-2xl font-bold">Normal Type Piston</h3>
                                         <p className="text-muted-foreground">
-                                            Our automotive pistons are designed for passenger vehicles, commercial trucks, and buses. They offer
-                                            excellent durability, fuel efficiency, and performance across a wide range of operating conditions.
+                                            The standard piston made from aluminum or cast iron, typically used in general engines.
                                         </p>
                                         <ul className="space-y-2">
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Cast and forged aluminum alloy options</span>
+                                                <span>Lightweight (especially aluminum)</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>OEM-equivalent or better specifications</span>
+                                                <span>Good heat conductivity</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Optimized crown designs for various engines</span>
+                                                <span>Simple design without special reinforcements.</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Low-friction skirt coatings</span>
+                                                <span>Usage: Common in low to medium-duty engines (motorcycles, cars)</span>
                                             </li>
                                         </ul>
                                         <div className="flex gap-4 pt-2">
@@ -214,27 +213,26 @@ const PistonsPage = () => {
                                         />
                                     </div>
                                     <div className="space-y-4">
-                                        <h3 className="text-2xl font-bold">Racing Pistons</h3>
+                                        <h3 className="text-2xl font-bold">Non-Magnetic Alfin Ring Type Piston</h3>
                                         <p className="text-muted-foreground">
-                                            Our high-performance racing pistons are engineered for maximum power, lightweight design, and
-                                            superior strength under extreme conditions. Used in motorsport competitions worldwide.
+                                            A piston with an Alfin ring insert, which is a steel ring cast into the aluminum piston crown.
                                         </p>
                                         <ul className="space-y-2">
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Forged from 2618 or 4032 aluminum alloys</span>
+                                                <span>Non-magnetic means it won’t interfere with magnetic sensors (e.g., in diesel engines)</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Optimized for high-RPM applications</span>
+                                                <span>Alfin ring provides better strength and wear resistance at the top ring groove</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Advanced thermal barrier coatings</span>
+                                                <span>Withstands high temperatures and pressures</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Custom designs for specific racing applications</span>
+                                                <span>Usage: Heavy-duty diesel engines where ring groove wear is a concern</span>
                                             </li>
                                         </ul>
                                         <div className="flex gap-4 pt-2">
@@ -264,27 +262,22 @@ const PistonsPage = () => {
                                         />
                                     </div>
                                     <div className="space-y-4">
-                                        <h3 className="text-2xl font-bold">Industrial Pistons</h3>
+                                        <h3 className="text-2xl font-bold">Oil-Cooling Type Piston</h3>
                                         <p className="text-muted-foreground">
-                                            Our industrial pistons are designed for heavy-duty applications in construction equipment,
-                                            generators, compressors, and agricultural machinery, offering exceptional reliability and longevity.
+                                            A piston designed with internal oil passages or oil galleries to allow oil to cool the piston crown.
                                         </p>
                                         <ul className="space-y-2">
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Heavy-duty construction for continuous operation</span>
+                                                <span>Maintains optimal piston temperature</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Enhanced oil control features</span>
+                                                <span>Reduces thermal stresses and the risk of piston seizure</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Optimized for low maintenance intervals</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Available in various sizes up to 300mm diameter</span>
+                                                <span>Usage: High-performance or turbocharged engines.</span>
                                             </li>
                                         </ul>
                                         <div className="flex gap-4 pt-2">
@@ -314,27 +307,26 @@ const PistonsPage = () => {
                                         />
                                     </div>
                                     <div className="space-y-4">
-                                        <h3 className="text-2xl font-bold">Marine Pistons</h3>
+                                        <h3 className="text-2xl font-bold">Steel Strip Type Piston</h3>
                                         <p className="text-muted-foreground">
-                                            Our marine pistons are specially designed to withstand the harsh conditions of marine environments,
-                                            offering corrosion resistance and reliable performance in recreational and commercial vessels.
+                                            A piston that incorporates steel strips or inserts in the piston skirt or ring grooves.
                                         </p>
                                         <ul className="space-y-2">
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Corrosion-resistant materials and coatings</span>
+                                                <span>Provides extra strength and durability where needed.</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Designed for both inboard and outboard engines</span>
+                                                <span>Helps maintain shape and ring groove clearance under heat.</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Enhanced durability for saltwater environments</span>
+                                                <span>Reduces thermal expansion mismatch.</span>
                                             </li>
                                             <li className="flex items-center gap-2">
                                                 <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Compatible with major marine engine manufacturers</span>
+                                                <span>Usage: High-compression engines or applications where strength and durability are key.</span>
                                             </li>
                                         </ul>
                                         <div className="flex gap-4 pt-2">
@@ -379,71 +371,44 @@ const PistonsPage = () => {
                             <table className="w-full border-collapse">
                                 <thead>
                                     <tr className="bg-muted">
-                                        <th className="border p-3 text-left">Specification</th>
-                                        <th className="border p-3 text-left">Standard Series</th>
-                                        <th className="border p-3 text-left">Performance Series</th>
-                                        <th className="border p-3 text-left">Racing Series</th>
+                                        <th className="border p-3 text-left">Type of Piston</th>
+                                        <th className="border p-3 text-left">Material</th>
+                                        <th className="border p-3 text-left">Special Features</th>
+                                        <th className="border p-3 text-left">Max Operating Temp</th>
+                                        <th className="border p-3 text-left">Applications</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td className="border p-3 font-medium">Material</td>
-                                        <td className="border p-3">Eutectic Aluminum Alloy</td>
-                                        <td className="border p-3">Hypereutectic Aluminum Alloy</td>
-                                        <td className="border p-3">2618/4032 Forged Aluminum</td>
+                                        <td className="border p-3 font-medium">Normal Type</td>
+                                        <td className="border p-3">Cast Aluminum Alloy / Cast Iron</td>
+                                        <td className="border p-3">Lightweight, good thermal conductivity, simple design</td>
+                                        <td className="border p-3">~300°C – 350°C</td>
+                                        <td className="border p-3">General-purpose engines (bikes, cars)</td>
                                     </tr>
                                     <tr>
-                                        <td className="border p-3 font-medium">Diameter Range</td>
-                                        <td className="border p-3">30mm - 150mm</td>
-                                        <td className="border p-3">40mm - 120mm</td>
-                                        <td className="border p-3">50mm - 110mm</td>
+                                        <td className="border p-3 font-medium">Non-Magnetic Alfin Ring</td>
+                                        <td className="border p-3">Aluminum alloy + Alfin (steel) insert</td>
+                                        <td className="border p-3">Steel ring groove, non-magnetic, wear-resistant</td>
+                                        <td className="border p-3">~350°C – 400°C</td>
+                                        <td className="border p-3">Diesel engines, heavy-duty trucks</td>
                                     </tr>
                                     <tr>
-                                        <td className="border p-3 font-medium">Crown Design</td>
-                                        <td className="border p-3">Flat, Dome, Bowl</td>
-                                        <td className="border p-3">Optimized Dome, Bowl</td>
-                                        <td className="border p-3">Custom Profiles</td>
+                                        <td className="border p-3 font-medium">Oil-Cooling Type</td>
+                                        <td className="border p-3">Aluminum alloy with internal oil gallery</td>
+                                        <td className="border p-3">Oil passage or cooling gallery for piston crown cooling</td>
+                                        <td className="border p-3">~400°C – 450°C</td>
+                                        <td className="border p-3">Turbocharged & performance engines</td>
                                     </tr>
                                     <tr>
-                                        <td className="border p-3 font-medium">Skirt Coating</td>
-                                        <td className="border p-3">Graphite</td>
-                                        <td className="border p-3">Molybdenum Disulfide</td>
-                                        <td className="border p-3">DLC (Diamond-Like Carbon)</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Ring Grooves</td>
-                                        <td className="border p-3">2-3 Rings</td>
-                                        <td className="border p-3">2-3 Rings with Steel Inserts</td>
-                                        <td className="border p-3">Gas Nitrided with Steel Inserts</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Weight Reduction</td>
-                                        <td className="border p-3">Standard</td>
-                                        <td className="border p-3">10-15% Reduction</td>
-                                        <td className="border p-3">20-30% Reduction</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Temperature Rating</td>
-                                        <td className="border p-3">Up to 280°C</td>
-                                        <td className="border p-3">Up to 320°C</td>
-                                        <td className="border p-3">Up to 350°C</td>
+                                        <td className="border p-3 font-medium">Steel Strip Type</td>
+                                        <td className="border p-3">Aluminum alloy + steel insert</td>
+                                        <td className="border p-3">Steel reinforcement in skirt/ring grooves, high wear resistance</td>
+                                        <td className="border p-3">~350°C – 400°C</td>
+                                        <td className="border p-3">High load & high RPM engines</td>
                                     </tr>
                                 </tbody>
                             </table>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            className="mt-8 flex justify-center"
-                        >
-                            <Button variant="outline" asChild>
-                                <Link href="#">
-                                    <FileText className="mr-2 h-4 w-4" /> Download Full Specifications
-                                </Link>
-                            </Button>
                         </motion.div>
                     </div>
                 </section>

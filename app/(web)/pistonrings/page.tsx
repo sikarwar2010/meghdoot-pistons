@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import PistonRingsPage from '@/components/layouts/products/PistonRingsPage';
 
 export const metadata: Metadata = {
     title: 'Piston Rings',
@@ -9,9 +10,9 @@ export const metadata: Metadata = {
 const PistonRings = () => {
     return (
         <div>
-            <h1>Piston Rings</h1>
+            <PistonRingsPage />
         </div>
     )
 }
 
-export default PistonRings
+export default PistonRings;

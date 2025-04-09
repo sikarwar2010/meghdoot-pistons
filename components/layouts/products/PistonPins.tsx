@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, Download, FileText } from "lucide-react"
+import { ArrowRight, CheckCircle, FileText } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -159,7 +159,7 @@ export default function PistonPinsPage() {
                                 >
                                     <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                                         <Image
-                                            src="/placeholder.svg?height=800&width=800"
+                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744104188/Standard_Piston_Pins_trxxaz.png"
                                             alt="Standard Piston Pins"
                                             fill
                                             className="object-cover"
@@ -195,11 +195,6 @@ export default function PistonPinsPage() {
                                                     Request Quote <ArrowRight className="ml-2 h-4 w-4" />
                                                 </Link>
                                             </Button>
-                                            <Button variant="outline" asChild>
-                                                <Link href="#">
-                                                    <Download className="mr-2 h-4 w-4" /> Download Catalog
-                                                </Link>
-                                            </Button>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -214,7 +209,7 @@ export default function PistonPinsPage() {
                                 >
                                     <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                                         <Image
-                                            src="/placeholder.svg?height=800&width=800"
+                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744104188/Performance_Piston_Pins_gz3g0b.png"
                                             alt="Performance Piston Pins"
                                             fill
                                             className="object-cover"
@@ -250,11 +245,6 @@ export default function PistonPinsPage() {
                                                     Request Quote <ArrowRight className="ml-2 h-4 w-4" />
                                                 </Link>
                                             </Button>
-                                            <Button variant="outline" asChild>
-                                                <Link href="#">
-                                                    <Download className="mr-2 h-4 w-4" /> Download Catalog
-                                                </Link>
-                                            </Button>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -269,7 +259,7 @@ export default function PistonPinsPage() {
                                 >
                                     <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                                         <Image
-                                            src="/placeholder.svg?height=800&width=800"
+                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744104188/Heavy-Duty_Piston_Pins_rw9uac.png"
                                             alt="Heavy-Duty Piston Pins"
                                             fill
                                             className="object-cover"
@@ -305,11 +295,6 @@ export default function PistonPinsPage() {
                                                     Request Quote <ArrowRight className="ml-2 h-4 w-4" />
                                                 </Link>
                                             </Button>
-                                            <Button variant="outline" asChild>
-                                                <Link href="#">
-                                                    <Download className="mr-2 h-4 w-4" /> Download Catalog
-                                                </Link>
-                                            </Button>
                                         </div>
                                     </div>
                                 </motion.div>
@@ -324,7 +309,7 @@ export default function PistonPinsPage() {
                                 >
                                     <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                                         <Image
-                                            src="/placeholder.svg?height=800&width=800"
+                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744105900/Specialized_Piston_Pins_bocuqg.png"
                                             alt="Specialized Piston Pins"
                                             fill
                                             className="object-cover"
@@ -358,11 +343,6 @@ export default function PistonPinsPage() {
                                             <Button asChild>
                                                 <Link href="/contact">
                                                     Request Quote <ArrowRight className="ml-2 h-4 w-4" />
-                                                </Link>
-                                            </Button>
-                                            <Button variant="outline" asChild>
-                                                <Link href="#">
-                                                    <Download className="mr-2 h-4 w-4" /> Download Catalog
                                                 </Link>
                                             </Button>
                                         </div>
@@ -530,20 +510,20 @@ export default function PistonPinsPage() {
                                 {
                                     title: "Pistons",
                                     description: "High-performance pistons engineered for maximum durability and thermal efficiency.",
-                                    image: "/placeholder.svg?height=600&width=600",
-                                    link: "/products/pistons",
+                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691687902/piston_dbfew1.jpg",
+                                    link: "/pistons",
                                 },
                                 {
                                     title: "Piston Rings",
                                     description: "Advanced rings providing superior sealing, oil control, and heat transfer properties.",
-                                    image: "/placeholder.svg?height=600&width=600",
-                                    link: "/products/rings",
+                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691685606/dreamstime_xxl_78054868_xuyndp.jpg",
+                                    link: "/pistonrings",
                                 },
                                 {
                                     title: "Cylinder Liners",
                                     description: "Durable liners with excellent wear resistance and thermal conductivity characteristics.",
-                                    image: "/placeholder.svg?height=600&width=600",
-                                    link: "/products/liners",
+                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1685792698/meghdoot/4_dl12uk.jpg",
+                                    link: "/cylinderliners",
                                 },
                             ].map((product, index) => (
                                 <motion.div key={index} variants={fadeIn}>
