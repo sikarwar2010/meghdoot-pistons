@@ -8,7 +8,8 @@ import { ArrowRight, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { ProductImageCarousel } from './product-carousel';
-import CustomerData from './CustomerList';
+import CustomerData from './CustomerData';
+import CustomerList from './CustomerList';
 
 const pistonImages = [
     {
@@ -379,6 +380,9 @@ const PistonsPage = () => {
                 </section>
 
                 {/* customer Data */}
+                <CustomerList />
+
+                {/* customer List */}
                 <CustomerData />
 
                 {/* Manufacturing Process */}
@@ -409,26 +413,26 @@ const PistonsPage = () => {
                             {[
                                 {
                                     step: "1",
-                                    title: "Material Selection",
-                                    description: "Premium aluminum alloys are selected based on the specific application requirements.",
+                                    title: "Casting",
+                                    description: "Pistons are either cast or forged depending on the performance requirements and application.",
                                 },
                                 {
                                     step: "2",
-                                    title: "Casting/Forging",
+                                    title: "Heat Treatment",
                                     description:
-                                        "Pistons are either cast or forged depending on the performance requirements and application.",
+                                        "Controlled heating and cooling processes optimize the mechanical properties of the piston.",
                                 },
                                 {
                                     step: "3",
-                                    title: "CNC Machining",
+                                    title: "Casting Visual Inspection",
                                     description:
-                                        "Precision CNC machines create the exact dimensions and features required for optimal performance.",
+                                        "Visual inspection ensures the piston meets dimensional and surface finish specifications.",
                                 },
                                 {
                                     step: "4",
-                                    title: "Surface Treatments",
+                                    title: "Rough Machining",
                                     description:
-                                        "Specialized coatings and treatments are applied to enhance durability and reduce friction.",
+                                        "Initial machining removes excess material and prepares the piston for further processing.",
                                 },
                                 {
                                     step: "5",
@@ -438,19 +442,29 @@ const PistonsPage = () => {
                                 },
                                 {
                                     step: "6",
-                                    title: "Quality Inspection",
-                                    description: "Rigorous testing and inspection ensure each piston meets our exacting standards.",
+                                    title: "Final Machining",
+                                    description: "Final machining ensures precise dimensions and surface finish.",
                                 },
                                 {
                                     step: "7",
-                                    title: "Performance Testing",
+                                    title: "Deburing",
                                     description:
-                                        "Sample pistons from each batch undergo performance testing in simulated operating conditions.",
+                                        "Removal of burrs and sharp edges to ensure smooth operation and prevent damage.",
                                 },
                                 {
                                     step: "8",
-                                    title: "Packaging & Shipping",
-                                    description: "Pistons are carefully packaged to protect them during global shipping to our customers.",
+                                    title: "Inspection",
+                                    description: "Final inspection ensures the piston meets all quality and dimensional specifications.",
+                                },
+                                {
+                                    step: "9",
+                                    title: "Marking",
+                                    description: "Marking with relevant information for identification and tracking.",
+                                },
+                                {
+                                    step: "10",
+                                    title: "Packing",
+                                    description: "Proper packaging for safe transportation.",
                                 },
                             ].map((step, index) => (
                                 <motion.div key={index} variants={fadeIn}>

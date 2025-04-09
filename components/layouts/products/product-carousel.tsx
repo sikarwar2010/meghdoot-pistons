@@ -154,11 +154,6 @@ export function ProductImageCarousel({
                                     className="object-contain"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
-                                <div className="absolute bottom-4 left-0 right-0 text-center">
-                                    <span className="bg-background/80 backdrop-blur-sm text-foreground px-4 py-2 rounded-full font-medium">
-                                        Product ID: {images[currentIndex].id}
-                                    </span>
-                                </div>
                             </div>
                         </motion.div>
                     </AnimatePresence>

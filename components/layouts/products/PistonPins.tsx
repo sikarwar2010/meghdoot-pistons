@@ -1,13 +1,37 @@
 "use client";
-import React from "react";
+import React from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, FileText } from "lucide-react"
+import { ArrowRight, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { ProductImageCarousel } from './product-carousel';
+import CustomerList from "./CustomerList";
+import CustomerData from './CustomerData';
 
+const pistonImages = [
+    {
+        id: "1",
+        src: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691655978/home1_tsgxb9.jpg",
+        alt: "High-performance automotive piston",
+    },
+    {
+        id: "2",
+        src: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691655978/home2_hmyrxy.jpg",
+        alt: "Racing piston with dome crown",
+    },
+    {
+        id: "3",
+        src: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691659786/home3_mf2azy.jpg",
+        alt: "Diesel engine piston with cooling gallery",
+    },
+    {
+        id: "4",
+        src: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691655978/home4_jmxnkp.jpg",
+        alt: "Lightweight forged piston for performance applications",
+    },
+]
 
 export default function PistonPinsPage() {
     const fadeIn = {
@@ -57,6 +81,21 @@ export default function PistonPinsPage() {
                                 Exported to over 50 countries, our piston pins deliver optimal load distribution and reduced friction for
                                 global automotive manufacturers.
                             </motion.p>
+                        </motion.div>
+                    </div>
+                </section>
+
+                {/* Product Variants Carousel */}
+                <section className="py-12 bg-muted/30">
+                    <div className="container mx-auto">
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            className="max-w-4xl mx-auto"
+                        >
+                            <ProductImageCarousel images={pistonImages} title="" />
                         </motion.div>
                     </div>
                 </section>
@@ -114,7 +153,7 @@ export default function PistonPinsPage() {
                                 className="relative h-[400px] rounded-lg overflow-hidden"
                             >
                                 <Image
-                                    src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691659786/home3_mf2azy.jpg"
+                                    src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691685606/dreamstime_xxl_78054868_xuyndp.jpg"
                                     alt="Precision piston pins"
                                     fill
                                     className="object-cover"
@@ -124,331 +163,11 @@ export default function PistonPinsPage() {
                     </div>
                 </section>
 
-                {/* Product Categories */}
-                <section className="py-16">
-                    <div className="container mx-auto">
-                        <motion.div
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            variants={staggerContainer}
-                            className="text-center mb-12"
-                        >
-                            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-4">
-                                Piston Pin Categories
-                            </motion.h2>
-                            <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                We export a wide range of piston pins to meet the diverse needs of our global customers.
-                            </motion.p>
-                        </motion.div>
-
-                        <Tabs defaultValue="standard" className="w-full">
-                            <TabsList className="grid grid-cols-2 md:grid-cols-4 w-full mb-8">
-                                <TabsTrigger value="standard">Standard</TabsTrigger>
-                                <TabsTrigger value="performance">Performance</TabsTrigger>
-                                <TabsTrigger value="heavy-duty">Heavy-Duty</TabsTrigger>
-                                <TabsTrigger value="specialized">Specialized</TabsTrigger>
-                            </TabsList>
-
-                            <TabsContent value="standard">
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5 }}
-                                    className="grid md:grid-cols-2 gap-8 items-center"
-                                >
-                                    <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
-                                        <Image
-                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744104188/Standard_Piston_Pins_trxxaz.png"
-                                            alt="Standard Piston Pins"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                    <div className="space-y-4">
-                                        <h3 className="text-2xl font-bold">Standard Piston Pins</h3>
-                                        <p className="text-muted-foreground">
-                                            Our standard piston pins are designed for passenger vehicles and light commercial applications. They
-                                            offer excellent durability and performance across a wide range of operating conditions.
-                                        </p>
-                                        <ul className="space-y-2">
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Case-hardened carbon steel construction</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Precision ground to tight tolerances</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Available in full-floating and semi-floating designs</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Exported to OEMs and aftermarket worldwide</span>
-                                            </li>
-                                        </ul>
-                                        <div className="flex gap-4 pt-2">
-                                            <Button asChild>
-                                                <Link href="/contact">
-                                                    Request Quote <ArrowRight className="ml-2 h-4 w-4" />
-                                                </Link>
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </TabsContent>
-
-                            <TabsContent value="performance">
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5 }}
-                                    className="grid md:grid-cols-2 gap-8 items-center"
-                                >
-                                    <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
-                                        <Image
-                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744104188/Performance_Piston_Pins_gz3g0b.png"
-                                            alt="Performance Piston Pins"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                    <div className="space-y-4">
-                                        <h3 className="text-2xl font-bold">Performance Piston Pins</h3>
-                                        <p className="text-muted-foreground">
-                                            Our high-performance piston pins are engineered for racing and high-output engines, offering maximum
-                                            strength with reduced weight for optimal performance.
-                                        </p>
-                                        <ul className="space-y-2">
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Chrome-moly steel or tool steel construction</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>DLC (Diamond-Like Carbon) coating option</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Hollow designs for weight reduction</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Exported to racing teams and performance builders globally</span>
-                                            </li>
-                                        </ul>
-                                        <div className="flex gap-4 pt-2">
-                                            <Button asChild>
-                                                <Link href="/contact">
-                                                    Request Quote <ArrowRight className="ml-2 h-4 w-4" />
-                                                </Link>
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </TabsContent>
-
-                            <TabsContent value="heavy-duty">
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5 }}
-                                    className="grid md:grid-cols-2 gap-8 items-center"
-                                >
-                                    <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
-                                        <Image
-                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744104188/Heavy-Duty_Piston_Pins_rw9uac.png"
-                                            alt="Heavy-Duty Piston Pins"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                    <div className="space-y-4">
-                                        <h3 className="text-2xl font-bold">Heavy-Duty Piston Pins</h3>
-                                        <p className="text-muted-foreground">
-                                            Our heavy-duty piston pins are designed for commercial trucks, construction equipment, and
-                                            industrial applications, offering exceptional durability and longevity.
-                                        </p>
-                                        <ul className="space-y-2">
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>High-alloy steel construction</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Deep case hardening for extended wear resistance</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Designed for high-load applications</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Exported to commercial vehicle manufacturers worldwide</span>
-                                            </li>
-                                        </ul>
-                                        <div className="flex gap-4 pt-2">
-                                            <Button asChild>
-                                                <Link href="/contact">
-                                                    Request Quote <ArrowRight className="ml-2 h-4 w-4" />
-                                                </Link>
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </TabsContent>
-
-                            <TabsContent value="specialized">
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.5 }}
-                                    className="grid md:grid-cols-2 gap-8 items-center"
-                                >
-                                    <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
-                                        <Image
-                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744105900/Specialized_Piston_Pins_bocuqg.png"
-                                            alt="Specialized Piston Pins"
-                                            fill
-                                            className="object-cover"
-                                        />
-                                    </div>
-                                    <div className="space-y-4">
-                                        <h3 className="text-2xl font-bold">Specialized Piston Pins</h3>
-                                        <p className="text-muted-foreground">
-                                            Our specialized piston pins are custom-designed for unique applications such as marine engines,
-                                            aviation, and specialized industrial equipment.
-                                        </p>
-                                        <ul className="space-y-2">
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Custom materials for specific applications</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Corrosion-resistant options for marine environments</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Specialized coatings for extreme conditions</span>
-                                            </li>
-                                            <li className="flex items-center gap-2">
-                                                <CheckCircle className="h-5 w-5 text-primary" />
-                                                <span>Exported to specialized manufacturers globally</span>
-                                            </li>
-                                        </ul>
-                                        <div className="flex gap-4 pt-2">
-                                            <Button asChild>
-                                                <Link href="/contact">
-                                                    Request Quote <ArrowRight className="ml-2 h-4 w-4" />
-                                                </Link>
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            </TabsContent>
-                        </Tabs>
-                    </div>
-                </section>
-
-                {/* Technical Specifications */}
-                <section className="py-16 bg-muted/50">
-                    <div className="container mx-auto">
-                        <motion.div
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ once: true }}
-                            variants={staggerContainer}
-                            className="text-center mb-12"
-                        >
-                            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-4">
-                                Technical Specifications
-                            </motion.h2>
-                            <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                Our piston pins are manufactured to precise specifications meeting international standards.
-                            </motion.p>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6 }}
-                            className="overflow-x-auto"
-                        >
-                            <table className="w-full border-collapse">
-                                <thead>
-                                    <tr className="bg-muted">
-                                        <th className="border p-3 text-left">Specification</th>
-                                        <th className="border p-3 text-left">Standard Series</th>
-                                        <th className="border p-3 text-left">Performance Series</th>
-                                        <th className="border p-3 text-left">Heavy-Duty Series</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Material</td>
-                                        <td className="border p-3">Case-hardened Carbon Steel</td>
-                                        <td className="border p-3">Chrome-moly Steel</td>
-                                        <td className="border p-3">High-alloy Steel</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Diameter Range</td>
-                                        <td className="border p-3">8mm - 30mm</td>
-                                        <td className="border p-3">12mm - 25mm</td>
-                                        <td className="border p-3">20mm - 50mm</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Surface Finish</td>
-                                        <td className="border p-3">Ra 0.2-0.4 μm</td>
-                                        <td className="border p-3">Ra 0.1-0.2 μm</td>
-                                        <td className="border p-3">Ra 0.2-0.3 μm</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Hardness</td>
-                                        <td className="border p-3">58-62 HRC</td>
-                                        <td className="border p-3">60-64 HRC</td>
-                                        <td className="border p-3">62-65 HRC</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Case Depth</td>
-                                        <td className="border p-3">0.5-1.0 mm</td>
-                                        <td className="border p-3">0.8-1.2 mm</td>
-                                        <td className="border p-3">1.0-1.5 mm</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Design Type</td>
-                                        <td className="border p-3">Solid, Semi-floating</td>
-                                        <td className="border p-3">Hollow, Full-floating</td>
-                                        <td className="border p-3">Solid, Full-floating</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="border p-3 font-medium">Export Standards</td>
-                                        <td className="border p-3">ISO, ASTM, JIS</td>
-                                        <td className="border p-3">ISO, ASTM, FIA</td>
-                                        <td className="border p-3">ISO, SAE, DIN</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            className="mt-8 flex justify-center"
-                        >
-                            <Button variant="outline" asChild>
-                                <Link href="#">
-                                    <FileText className="mr-2 h-4 w-4" /> Download Full Specifications
-                                </Link>
-                            </Button>
-                        </motion.div>
-                    </div>
-                </section>
+                {/* customer List & Customer Data */}
+                <div>
+                    <CustomerList />
+                    <CustomerData />
+                </div>
 
                 {/* CTA Section */}
                 <section className="py-16">
