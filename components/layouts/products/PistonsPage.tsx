@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle, FileText } from "lucide-react"
+import { ArrowRight, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -155,14 +155,14 @@ const PistonsPage = () => {
                                     transition={{ duration: 0.5 }}
                                     className="grid md:grid-cols-2 gap-8 items-center"
                                 >
-                                    <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+                                    {/* <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                                         <Image
                                             src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743876991/Automotive-pistons_yuhu7o.png"
                                             alt="Automotive Pistons"
                                             fill
                                             className="object-cover"
                                         />
-                                    </div>
+                                    </div> */}
                                     <div className="space-y-4">
                                         <h3 className="text-2xl font-bold">Normal Type Piston</h3>
                                         <p className="text-muted-foreground">
@@ -204,14 +204,14 @@ const PistonsPage = () => {
                                     transition={{ duration: 0.5 }}
                                     className="grid md:grid-cols-2 gap-8 items-center"
                                 >
-                                    <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+                                    {/* <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                                         <Image
                                             src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743876992/industrial-piston_uxqauk.png"
                                             alt="Racing Pistons"
                                             fill
                                             className="object-cover"
                                         />
-                                    </div>
+                                    </div> */}
                                     <div className="space-y-4">
                                         <h3 className="text-2xl font-bold">Non-Magnetic Alfin Ring Type Piston</h3>
                                         <p className="text-muted-foreground">
@@ -253,14 +253,14 @@ const PistonsPage = () => {
                                     transition={{ duration: 0.5 }}
                                     className="grid md:grid-cols-2 gap-8 items-center"
                                 >
-                                    <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+                                    {/* <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                                         <Image
                                             src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743876991/racing-piston_p6rnaj.png"
                                             alt="Industrial Pistons"
                                             fill
                                             className="object-cover"
                                         />
-                                    </div>
+                                    </div> */}
                                     <div className="space-y-4">
                                         <h3 className="text-2xl font-bold">Oil-Cooling Type Piston</h3>
                                         <p className="text-muted-foreground">
@@ -298,14 +298,14 @@ const PistonsPage = () => {
                                     transition={{ duration: 0.5 }}
                                     className="grid md:grid-cols-2 gap-8 items-center"
                                 >
-                                    <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
+                                    {/* <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
                                         <Image
                                             src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743876992/marine-piston_mewehz.png"
                                             alt="Marine Pistons"
                                             fill
                                             className="object-cover"
                                         />
-                                    </div>
+                                    </div> */}
                                     <div className="space-y-4">
                                         <h3 className="text-2xl font-bold">Steel Strip Type Piston</h3>
                                         <p className="text-muted-foreground">
