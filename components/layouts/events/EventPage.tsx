@@ -70,15 +70,15 @@ export default function EventsPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <Card className="overflow-hidden w-250 h-auto">
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div className="relative h-[300px] w-[500px] md:h-auto">
+                        <Card className="overflow-hidden w-full sm:w-[500px] md:w-[700px] lg:w-[900px]">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                                <div className="relative h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] w-full">
                                     <Image
                                         src={upcomingEvents[0].image || "/placeholder.svg"}
                                         alt={upcomingEvents[0].title}
                                         fill
                                         priority
-                                        className="object-contain p-1"
+                                        className="object-contain p-2"
                                     />
                                 </div>
                                 <CardContent className="p-6 flex flex-col justify-center space-y-4">
