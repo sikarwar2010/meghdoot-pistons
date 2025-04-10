@@ -1,5 +1,6 @@
 import Footer from "@/components/layouts/Navigation/Footer";
 import Header from "@/components/layouts/Navigation/Header";
+import { Toaster } from "@/components/ui/sonner";
 
 export default function webLayout({
     children,
@@ -10,6 +11,7 @@ export default function webLayout({
         <div>
             <Header />
             <main className="min-h-screen flex flex-col">{children}</main>
+            <Toaster />
             <Footer />
         </div>
     );
