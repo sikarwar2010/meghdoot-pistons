@@ -139,22 +139,50 @@ export default function QualityPage() {
                         </motion.p>
                     </motion.div>
 
-                    <div className="grid md:grid-cols-1 gap-12 items-center justify-items-center">
+                    <div className="container mx-auto">
                         <motion.div
-                            initial={{ opacity: 0, x: -50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6 }}
-                            className="space-y-6 max-w-2xl"
                         >
-                            <Image
-                                src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691934350/MEGHDOOT_PISTONS_PVT._LTD._QMS_page-0001_pgjr6g.png"
-                                alt="Meghdoot Pistons Quality Management System"
-                                width={500}
-                                height={500}
-                                className="mx-auto"
-                                priority
-                            />
+                            <Card className="overflow-hidden">
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="relative h-[400px] md:h-auto">
+                                        <Image
+                                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1691934350/MEGHDOOT_PISTONS_PVT._LTD._QMS_page-0001_pgjr6g.png"
+                                            alt="Meghdoot Pistons Quality Management System"
+                                            fill
+                                            priority
+                                            className="object-contain p-4"
+                                        />
+                                    </div>
+                                    <CardContent className="p-6 flex flex-col justify-center space-y-4">
+                                        <div>
+                                            <span className="text-sm font-medium text-primary">Quality Certification</span>
+                                            <h2 className="text-2xl md:text-3xl font-bold mt-2">ISO 9001:2015 Certified</h2>
+                                        </div>
+                                        <p className="text-muted-foreground">
+                                            Our commitment to quality is reflected in our ISO 9001:2015 certification, ensuring that our processes and
+                                            products consistently meet the highest international standards.
+                                        </p>
+                                        <div className="space-y-2 text-sm text-muted-foreground">
+                                            <div className="flex items-center">
+                                                <CheckCircle className="h-4 w-4 mr-2 text-primary" />
+                                                <span>International Quality Standards</span>
+                                            </div>
+                                            <div className="flex items-center">
+                                                <CheckCircle className="h-4 w-4 mr-2 text-primary" />
+                                                <span>Continuous Improvement</span>
+                                            </div>
+                                            <div className="flex items-center">
+                                                <CheckCircle className="h-4 w-4 mr-2 text-primary" />
+                                                <span>Customer Satisfaction</span>
+                                            </div>
+                                        </div>
+                                    </CardContent>
+                                </div>
+                            </Card>
                         </motion.div>
                     </div>
                 </div>
