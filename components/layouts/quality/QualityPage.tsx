@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { motion } from "framer-motion"
-import { Award, CheckCircle, FileText, Globe, Shield, Star } from "lucide-react"
+import { CheckCircle, } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -313,7 +313,6 @@ export default function QualityPage() {
                             <motion.div key={index} variants={fadeIn}>
                                 <Card className="h-full">
                                     <CardContent className="p-6 flex flex-col h-full">
-                                        <div className="mb-6 text-4xl text-primary">"</div>
                                         <p className="text-muted-foreground italic flex-grow mb-6">{testimonial.quote}</p>
                                         <div>
                                             <p className="font-bold">{testimonial.name}</p>
