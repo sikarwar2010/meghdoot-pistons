@@ -52,7 +52,7 @@ const AboutPage = () => {
                                 About <span className="text-primary">Meghdoot Pistons</span>
                             </motion.h1>
                             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground">
-                                A legacy of excellence in automotive component manufacturing since 1967.
+                                A legacy of Excellence in manufacturing of Pistons since 1967.
                             </motion.p>
                         </motion.div>
                     </div>
@@ -72,16 +72,14 @@ const AboutPage = () => {
                                 <h2 className="text-3xl font-bold">Our Story</h2>
                                 <p className="text-muted-foreground">
                                     Founded in 1967, Meghdoot Pistons began as a small workshop with a big vision - to manufacture
-                                    world-class automotive components that would set new standards in performance and reliability.
+                                    world-class pistons that would set new standards in performance and reliability.
                                 </p>
                                 <p className="text-muted-foreground">
-                                    Over the decades, we have grown into a global enterprise, supplying precision-engineered pistons, pins,
-                                    rings, and cylinder liners to leading automotive manufacturers across the world.
+                                    Over the decades, we have grown into a global enterprise, supplying precision-engineered Pistons, Pins,
+                                    Rings, and Cylinder Liners to automotive markets across 20+ countries around the world.
                                 </p>
-                                <p className="text-muted-foreground">
-                                    Today, with state-of-the-art manufacturing facilities spanning over 50,000 square meters and a workforce
-                                    of more than 500 skilled professionals, we continue to push the boundaries of innovation in automotive
-                                    component manufacturing.
+                                <p className="text-muted-foreground text-justify">
+                                    Our manufacturing unit is equipped with modern techniques backed with a technically sound management team and qualified engineers to ensure adequate quality control.Ours diverse portfolio includes extensive range of Pistons, Liners, Rings and other Engine parts.
                                 </p>
                             </motion.div>
                             <motion.div
@@ -219,19 +217,11 @@ const AboutPage = () => {
                             whileInView="visible"
                             viewport={{ once: true }}
                             variants={staggerContainer}
-                            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+                            className="grid md:grid-cols-2 lg:grid-cols-2 gap-8"
                         >
                             {[
                                 {
                                     id: 1,
-                                    name: "Mr. Sunil Agarwal",
-                                    position: "Director",
-                                    image: "",
-                                    bio:
-                                        "Managing director, with over massive years of exposure to deal with complex micro macro issues that may threaten company profitability and longevity by providing innovative turn key solutions. Acts as the advisory to the board of directors and team with demonstrated expertise. Mr.Agarwal started his journey along with his father, is a mentor and guiding force behind all decisions.",
-                                },
-                                {
-                                    id: 2,
                                     name: "Mr. Akash Agarwal",
                                     position: "Director",
                                     image: "",
@@ -239,7 +229,7 @@ const AboutPage = () => {
                                         "was always keen to be join the business. After completing his education, Mr.Akash decided to take the lead. Years of experience and exposure to business environment made him rock solid to achieve day to day goals and encourage his entire team in creating Meghdoot Pistons, a world known brand.",
                                 },
                                 {
-                                    id: 3,
+                                    id: 2,
                                     name: "Mr.Vishwas Agarwal",
                                     position: "Director",
                                     image: "",
@@ -250,9 +240,9 @@ const AboutPage = () => {
                                 <motion.div key={index} variants={fadeIn}>
                                     <Card>
                                         <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                                            {/* <div className="relative w-32 h-32 rounded-full overflow-hidden">
+                                            <div className="relative w-32 h-32 rounded-full overflow-hidden">
                                                 <Image src={leader.image || "/placeholder.svg"} alt={""} fill className="object-cover" />
-                                            </div> */}
+                                            </div>
                                             <div>
                                                 <h3 className="text-xl font-bold">{leader.name}</h3>
                                                 <p className="text-primary font-medium">{leader.position}</p>
@@ -280,7 +270,7 @@ const AboutPage = () => {
                                 Our Journey
                             </motion.h2>
                             <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                Key milestones in our path to becoming a global leader in automotive component manufacturing.
+                                Key milestones in our path to becoming a leading manufacturer of pistons manufacturing for after market.
                             </motion.p>
                         </motion.div>
 
@@ -290,44 +280,59 @@ const AboutPage = () => {
                             <div className="space-y-12">
                                 {[
                                     {
-                                        year: "1985",
+                                        year: "1967",
                                         title: "Foundation",
-                                        description: "Meghdoot Pistons was founded with a small workshop in Gurugram, India.",
+                                        description: "Meghdoot Pistons was founded with a small workshop in Agra Uttar Pradesh, India.",
                                     },
                                     {
-                                        year: "1992",
-                                        title: "First Major Contract",
-                                        description: "Secured our first major contract with a leading Indian automotive manufacturer.",
+                                        year: "1969",
+                                        title: "Begining",
+                                        description: "Regular production of pistons sutaible for gensets.",
                                     },
                                     {
-                                        year: "1998",
-                                        title: "ISO Certification",
-                                        description: "Achieved ISO 9001 certification, marking our commitment to quality management.",
+                                        year: "1975",
+                                        title: "Brand Established",
+                                        description: "Became a predominant brand in national market under brand name MEGHDOOT",
                                     },
                                     {
-                                        year: "2005",
-                                        title: "International Expansion",
-                                        description: "Began exporting products to international markets in Asia and Europe.",
+                                        year: "1980",
+                                        title: "OEM supplying",
+                                        description: "Started supplying pistons to mutliply OEMs",
+                                    },
+                                    {
+                                        year: "1985",
+                                        title: "No.1 choice",
+                                        description: "Best choice for Pistons to Marchant Exporters",
+                                    },
+                                    {
+                                        year: "1991",
+                                        title: "Manufacturing Expansion",
+                                        description: "Expanded manufacturing with a new unit in Agra Uttar Pradesh, India",
+                                    },
+                                    {
+                                        year: "2001",
+                                        title: "Modern Technology & Certification",
+                                        description: "Introduction of CNC's Lathes & ISO 9001:2000 certification",
                                     },
                                     {
                                         year: "2010",
-                                        title: "R&D Center",
-                                        description: "Established a state-of-the-art Research & Development center.",
+                                        title: "Increase Capacity",
+                                        description: "Increase capacity to 12000 pcs per month with wide range of more than 500 models",
                                     },
                                     {
-                                        year: "2015",
-                                        title: "Manufacturing Expansion",
-                                        description: "Expanded manufacturing facilities to 50,000 square meters with advanced automation.",
+                                        year: "2017",
+                                        title: "Export Initiatives",
+                                        description: "Venturing into international markets, by particpating in various international trade fairs",
                                     },
                                     {
-                                        year: "2020",
-                                        title: "Global Recognition",
-                                        description: "Recognized as one of the top 10 automotive component manufacturers globally.",
+                                        year: "2023",
+                                        title: "Global Expansion",
+                                        description: "With a strong presence in over 20 countries, we continue to expand our global reach.",
                                     },
                                     {
-                                        year: "Present",
-                                        title: "Continuing Innovation",
-                                        description: "Continuing to innovate and expand our product range to meet evolving industry needs.",
+                                        year: "2024",
+                                        title: "Future Focus",
+                                        description: "Continuing our legacy, we remain committed to innovation and excellence in piston manufacturing.",
                                     },
                                 ].map((milestone, index) => (
                                     <motion.div
