@@ -1,7 +1,9 @@
 "use client";
-import React from "react";
+import React from 'react';
 import Link from "next/link"
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, ExternalLink } from "lucide-react"
+import { Mail, Phone, MapPin, ExternalLink } from "lucide-react"
+import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
+
 
 export default function Footer() {
     return (
@@ -18,19 +20,15 @@ export default function Footer() {
                         </p>
                         <div className="flex space-x-4">
                             <Link href="#" className="text-muted-foreground hover:text-primary">
-                                <Facebook className="h-5 w-5" />
+                                <FaFacebookF className="h-5 w-5" />
                                 <span className="sr-only">Facebook</span>
                             </Link>
                             <Link href="#" className="text-muted-foreground hover:text-primary">
-                                <Twitter className="h-5 w-5" />
+                                <FaTwitter className="h-5 w-5" />
                                 <span className="sr-only">Twitter</span>
                             </Link>
                             <Link href="#" className="text-muted-foreground hover:text-primary">
-                                <Instagram className="h-5 w-5" />
-                                <span className="sr-only">Instagram</span>
-                            </Link>
-                            <Link href="#" className="text-muted-foreground hover:text-primary">
-                                <Linkedin className="h-5 w-5" />
+                                <FaLinkedin className="h-5 w-5" />
                                 <span className="sr-only">LinkedIn</span>
                             </Link>
                         </div>
@@ -41,7 +39,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li>
                                 <Link
-                                    href="/products/pistons"
+                                    href="/pistons"
                                     className="text-sm text-muted-foreground hover:text-primary flex items-center"
                                 >
                                     <ExternalLink className="h-3 w-3 mr-2" />
@@ -50,7 +48,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/products/pins"
+                                    href="/pistonpins"
                                     className="text-sm text-muted-foreground hover:text-primary flex items-center"
                                 >
                                     <ExternalLink className="h-3 w-3 mr-2" />
@@ -59,7 +57,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/products/rings"
+                                    href="/pistonrings"
                                     className="text-sm text-muted-foreground hover:text-primary flex items-center"
                                 >
                                     <ExternalLink className="h-3 w-3 mr-2" />
@@ -68,7 +66,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/products/liners"
+                                    href="/cylinderliners"
                                     className="text-sm text-muted-foreground hover:text-primary flex items-center"
                                 >
                                     <ExternalLink className="h-3 w-3 mr-2" />
@@ -88,28 +86,28 @@ export default function Footer() {
                         <h3 className="text-lg font-bold">Quick links</h3>
                         <ul className="space-y-2">
                             <li className="flex items-center space-x-2">
-                                <Link href={"/"} className="text-sm text-muted-foreground hover:text-primary flex items-center">
-                                    <span className="text-sm text-muted-foreground">Home</span>
+                                <Link href={"/"} className="text-sm text-muted-foreground flex items-center">
+                                    <span className="text-sm text-muted-foreground hover:text-primary">Home</span>
                                 </Link>
                             </li>
                             <li className="flex items-center space-x-2">
-                                <Link href={"/about"} className="text-sm text-muted-foreground hover:text-primary flex items-center">
-                                    <span className="text-sm text-muted-foreground">About</span>
+                                <Link href={"/about"} className="text-sm text-muted-foreground flex items-center">
+                                    <span className="text-sm text-muted-foreground hover:text-primary">About</span>
                                 </Link>
                             </li>
                             <li className="flex items-center space-x-2">
-                                <Link href={"/blog"} className="text-sm text-muted-foreground hover:text-primary flex items-center">
-                                    <span className="text-sm text-muted-foreground">Blog</span>
+                                <Link href={"/blog"} className="text-sm text-muted-foreground flex items-center">
+                                    <span className="text-sm text-muted-foreground hover:text-primary">Blog</span>
                                 </Link>
                             </li>
                             <li className="flex items-center space-x-2">
-                                <Link href={"/events"} className="text-sm text-muted-foreground hover:text-primary flex items-center">
-                                    <span className="text-sm text-muted-foreground">Events</span>
+                                <Link href={"/events"} className="text-sm text-muted-foreground flex items-center">
+                                    <span className="text-sm text-muted-foreground hover:text-primary">Events</span>
                                 </Link>
                             </li>
                             <li className="flex items-center space-x-2">
-                                <Link href={"/contact"} className="text-sm text-muted-foreground hover:text-primary flex items-center">
-                                    <span className="text-sm text-muted-foreground">Contact</span>
+                                <Link href={"/contact"} className="text-sm text-muted-foreground flex items-center">
+                                    <span className="text-sm text-muted-foreground hover:text-primary">Contact</span>
                                 </Link>
                             </li>
                         </ul>
@@ -145,9 +143,14 @@ export default function Footer() {
                             &copy; {new Date().getFullYear()} Meghdoot Pistons. All rights reserved.
                         </p>
                         <div className="flex space-x-4 mt-4 md:mt-0">
-                            <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
-                                Development By: Ringerlabs Technologies
-                            </Link>
+                            <p className="text-sm text-muted-foreground">
+                                Development By:
+                                <Link href={"https://ringerlabs.com"}>
+                                    <span className="text-primary animate-pulse">
+                                        Ringerlabs Technologies
+                                    </span>
+                                </Link>
+                            </p>
                         </div>
                     </div>
                 </div>

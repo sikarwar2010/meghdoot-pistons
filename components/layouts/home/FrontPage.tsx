@@ -184,7 +184,7 @@ const FrontPage = () => {
                 </section>
 
                 {/* Features Section */}
-                <section className="py-16 bg-muted/50">
+                <section className="py-16 bg-background/40">
                     <div className="container mx-auto">
                         <motion.div
                             initial="hidden"

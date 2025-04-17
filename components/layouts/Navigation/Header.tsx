@@ -48,13 +48,20 @@ export default function Header() {
         <header
             className={cn(
                 "sticky top-0 z-50 w-full transition-all duration-300",
-                scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-background",
+                scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent",
             )}
         >
-            <div className="flex h-16 items-center justify-between px-4 bg-muted">
+            <div className="flex h-16 items-center justify-between px-4 bg-gray-400 dark:bg-accent">
                 <Link href="/" className="flex items-center space-x-2">
                     <Image
                         src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1689936685/logo_jjwhbb.png"
+                        alt="meghdoot logo"
+                        width={70}
+                        height={70}
+                        className="cursor-pointer px-2"
+                    />
+                    <Image
+                        src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744874181/Visiting_Card_scp7ll.png"
                         alt="meghdoot logo"
                         width={70}
                         height={70}
@@ -66,7 +73,7 @@ export default function Header() {
                         transition={{ duration: 0.5 }}
                     >
 
-                        <span className="text-2xl font-semibold font-sans">Meghdoot</span>
+                        <span className="text-2xl font-semibold font-sans mr-2">Meghdoot</span>
                         <span className="text-2xl font-semibold text-primary font-sans">Pistons</span>
                     </motion.div>
                 </Link>
@@ -158,8 +165,8 @@ export default function Header() {
                                                 href={subItem.path}
                                                 onClick={() => setIsOpen(false)}
                                                 className={cn(
-                                                    "text-base transition-colors hover:text-primary",
-                                                    pathname === subItem.path ? "text-primary" : "text-muted-foreground",
+                                                    "text-base transition-colors hover:text-accent",
+                                                    pathname === subItem.path ? "text-accent" : "text-muted-foreground",
                                                 )}
                                             >
                                                 {subItem.name}
