@@ -124,25 +124,15 @@ const PistonRingsPage = () => {
                             <div className="space-y-2">
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Applications:	All types of Piston Engines</span>
+                                    <span>Applications:	For All types of Piston Engines</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Diameter sizes:	10 – 300mm</span>
+                                    <span>Diameter sizes:10mm to 300mm</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-primary" />
                                     <span>Materials:High grade cast iron alloy / special alloy steel / S.G. iron</span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Construction:
-                                        Compressor Rings- Rectangular, Keystone, Taper periphery, Bevelled, Napier, etc. and Oil control Rings-Plain, bevelled, coil spring loaded, duaflex, 3 flex, etc.
-                                    </span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Global export compliance certified</span>
                                 </div>
                             </div>
                         </motion.div>

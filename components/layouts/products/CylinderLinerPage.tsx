@@ -113,7 +113,7 @@ export default function CylinderLinersPage() {
                         >
                             <h2 className="text-3xl font-bold">Product Overview</h2>
                             <p className="text-muted-foreground">
-                                Meghdoot Pistons manufactures premium cylinder liners that are exported to automotive manufacturers
+                                Meghdoot Pistons premium cylinder liners that are exported to automotive manufacturers
                                 worldwide. Our liners are designed to provide optimal wear resistance, thermal conductivity, and
                                 dimensional stability for extended engine life.
                             </p>
@@ -153,7 +153,7 @@ export default function CylinderLinersPage() {
                             className="relative h-[400px] rounded-lg overflow-hidden"
                         >
                             <Image
-                                src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1685792698/meghdoot/4_dl12uk.jpg"
+                                src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1744877533/cylinder_lrqpnl.jpg"
                                 alt="Durable cylinder liners"
                                 fill
                                 className="object-cover"

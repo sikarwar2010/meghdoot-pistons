@@ -126,11 +126,11 @@ export default function PistonPinsPage() {
                                 <div className="space-y-2">
                                     <div className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
-                                        <span>Application: all type of Piston Engines</span>
+                                        <span>Application: For All types of Piston Engines</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
-                                        <span>Sizes:OD 5 mm to 70 mm
+                                        <span>OD Sizes 5 mm to 70 mm.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-2">

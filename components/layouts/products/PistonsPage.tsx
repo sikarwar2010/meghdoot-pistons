@@ -381,8 +381,8 @@ const PistonsPage = () => {
 
                 {/* customer Data */}
                 <div className='py-16 bg-muted/30'>
-                <CustomerList />
-                <CustomerData />
+                    <CustomerList />
+                    <CustomerData />
                 </div>
 
                 {/* Manufacturing Process */}
@@ -399,7 +399,7 @@ const PistonsPage = () => {
                                 Manufacturing Process
                             </motion.h2>
                             <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                Our state-of-the-art manufacturing process ensures consistent quality and performance.
+                                Our manufacturing process ensures consistent quality and performance.
                             </motion.p>
                         </motion.div>
 
@@ -414,31 +414,31 @@ const PistonsPage = () => {
                                 {
                                     step: "1",
                                     title: "Casting",
-                                    description: "Pistons are either cast or forged depending on the performance requirements and application.",
+                                    description: "Pistons are casted from High quality Aluminium Alloy.",
                                 },
                                 {
                                     step: "2",
                                     title: "Heat Treatment",
                                     description:
-                                        "Controlled heating and cooling processes optimize the mechanical properties of the piston.",
+                                        "Controlled heating and cooling processes optimize the mechanical properties of the Piston.",
                                 },
                                 {
                                     step: "3",
                                     title: "Casting Visual Inspection",
                                     description:
-                                        "Visual inspection ensures the piston meets dimensional and surface finish specifications.",
+                                        "Visual inspection ensures the pistons are free from cracks and shrinkage.",
                                 },
                                 {
                                     step: "4",
-                                    title: "Rough Machining",
+                                    title: "Heat Treatment",
                                     description:
-                                        "Initial machining removes excess material and prepares the piston for further processing.",
+                                        "Controlled heating process for optimized mechanical properties of the piston.",
                                 },
                                 {
                                     step: "5",
-                                    title: "Heat Treatment",
+                                    title: "Rough Machining",
                                     description:
-                                        "Controlled heating and cooling processes optimize the mechanical properties of the piston.",
+                                        "Initial machining removes excess material and prepares the piston for further processing.",
                                 },
                                 {
                                     step: "6",
@@ -459,7 +459,7 @@ const PistonsPage = () => {
                                 {
                                     step: "9",
                                     title: "Marking",
-                                    description: "Marking with relevant information for identification and tracking.",
+                                    description: "Marking with relevant information as per the models.",
                                 },
                                 {
                                     step: "10",
