@@ -226,36 +226,12 @@ export default function QualityPage() {
                                 },
                                 {
                                     step: "3",
-                                    title: "Statistical Process Control",
-                                    description:
-                                        "We implement SPC techniques to monitor process variations and make real-time adjustments, ensuring consistent quality across production runs.",
-                                },
-                                {
-                                    step: "4",
-                                    title: "Dimensional Verification",
-                                    description:
-                                        "Using precision measuring instruments including CMMs (Coordinate Measuring Machines), we verify that all critical dimensions meet the required specifications.",
-                                },
-                                {
-                                    step: "5",
-                                    title: "Surface Treatment Inspection",
-                                    description:
-                                        "All surface treatments and coatings are tested for adhesion, thickness, and wear resistance to ensure optimal performance and longevity.",
-                                },
-                                {
-                                    step: "6",
-                                    title: "Functional Testing",
-                                    description:
-                                        "Sample products from each batch undergo functional testing in simulated operating conditions to verify performance under real-world scenarios.",
-                                },
-                                {
-                                    step: "7",
                                     title: "Final Inspection",
                                     description:
                                         "Our quality assurance team conducts a comprehensive final inspection before products are cleared for packaging and export.",
                                 },
                                 {
-                                    step: "8",
+                                    step: "4",
                                     title: "Documentation & Traceability",
                                     description:
                                         "Complete quality documentation is maintained for each batch, ensuring full traceability from raw material to finished product.",
@@ -319,23 +295,18 @@ export default function QualityPage() {
                             {
                                 quote:
                                     "Meghdoot Pistons has consistently delivered high-quality components that meet our stringent requirements. Their commitment to quality and on-time delivery has made them a valued supplier for our European operations.",
-                                name: "Thomas Schmidt",
-                                position: "Procurement Director",
-                                company: "European Motors GmbH",
+                                name: "By German Customer",
                             },
                             {
                                 quote:
-                                    "We've been importing piston components from Meghdoot for over a decade. Their quality control processes are exceptional, resulting in products that consistently exceed our expectations and performance standards.",
-                                name: "Robert Johnson",
-                                position: "Quality Assurance Manager",
-                                company: "American Automotive Inc.",
+                                    "We've been importing pistons from Meghdoot from 3 years. Their quality control processes are exceptional, resulting in products that consistently exceed our expectations and performance standards.",
+                                name: "By Turkey Customer",
+
                             },
                             {
                                 quote:
-                                    "As a leading automotive manufacturer in Asia, we demand the highest quality from our suppliers. Meghdoot Pistons has proven to be a reliable partner, delivering premium components that enhance our engine performance.",
-                                name: "Hiroshi Tanaka",
-                                position: "Supply Chain Director",
-                                company: "Asian Motors Corporation",
+                                    " Meghdoot Pistons has proven to be a reliable partner, delivering good quality pistons & cylinder Block kits for my brand.",
+                                name: "By Egypt Customer",
                             },
                         ].map((testimonial, index) => (
                             <motion.div key={index} variants={fadeIn}>
@@ -344,8 +315,6 @@ export default function QualityPage() {
                                         <p className="text-muted-foreground italic flex-grow mb-6">{testimonial.quote}</p>
                                         <div>
                                             <p className="font-bold">{testimonial.name}</p>
-                                            <p className="text-sm text-muted-foreground">{testimonial.position}</p>
-                                            <p className="text-sm text-primary">{testimonial.company}</p>
                                         </div>
                                     </CardContent>
                                 </Card>
