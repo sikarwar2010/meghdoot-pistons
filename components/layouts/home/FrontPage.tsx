@@ -34,7 +34,7 @@ const FrontPage = () => {
                 <section className="relative py-20 md:py-28 overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1743750098/high-piston_twfiw0.png"
+                            src="https://res.cloudinary.com/dfvtnrisi/image/upload/v1690185819/dreamstime_xxl_21865382_yqefgr.jpg"
                             alt="Global manufacturing facility"
                             fill
                             className="object-cover object-center opacity-20 dark:opacity-10"
@@ -52,12 +52,11 @@ const FrontPage = () => {
                                 Premium Engine Components for <span className="text-primary">Global Automotive Industries</span>
                             </motion.h1>
                             <motion.p variants={fadeIn} className="text-lg md:text-xl text-muted-foreground">
-                                Precision-engineered Pistons, Pins, Piston Rings, and Cylinder Liners trusted by automotive manufacturers
-                                across 50+ countries.
+                                Precision-Engineered Pistons, Pins, Piston Rings, and Cylinder Liners trusted in Automotive market across 20+ countries.
                             </motion.p>
                             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                                 <Button asChild size="lg">
-                                    <Link href="/products">
+                                    <Link href="/pistons">
                                         Explore Products <ArrowRight className="ml-2 h-4 w-4" />
                                     </Link>
                                 </Button>
@@ -83,7 +82,9 @@ const FrontPage = () => {
                                 Global Presence
                             </motion.h2>
                             <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                Meghdoot Piston Pvt Ltd global footprint includes more than 20 locations across four continents (South America, Far East Asia, Europe, East & West Africa and CIS Countries).
+                                Global footprint includes Five Continents (North America, South America, Asia, Europe, Africa and CIS Countries).
+                                Exporting to over <span className='font-bold'>20+</span> Countries
+                                Selling over <span className='font-bold'>70000 pcs</span> Annually Engine Parts
                             </motion.p>
                         </motion.div>
 
@@ -119,8 +120,7 @@ const FrontPage = () => {
                                 Our Premium Products
                             </motion.h2>
                             <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                Engineered with precision and manufactured with the highest quality materials to ensure optimal
-                                performance and durability.
+                                Engineered with precision and manufactured in India with the highest quality materials to ensure optimal performance and durability.
                             </motion.p>
                         </motion.div>
 
@@ -134,27 +134,27 @@ const FrontPage = () => {
                             {[
                                 {
                                     title: "Pistons",
-                                    description: "High-performance pistons engineered for maximum durability and thermal efficiency.",
+                                    description: "High-Performance Pistons made of Aluminium Alloy, made for maximum durability and thermal efficiency.",
                                     image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691687902/piston_dbfew1.jpg",
-                                    link: "/products/pistons",
+                                    link: "/pistons",
                                 },
                                 {
                                     title: "Piston Pins",
                                     description: "Precision-manufactured pins designed for optimal load distribution and reduced friction.",
                                     image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691858760/pistonpin_2_uzvt1d.jpg",
-                                    link: "/products/pins",
+                                    link: "/pistonpins",
                                 },
                                 {
                                     title: "Piston Rings",
                                     description: "Advanced rings providing superior sealing, oil control, and heat transfer properties.",
                                     image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1691685606/dreamstime_xxl_78054868_xuyndp.jpg",
-                                    link: "/products/rings",
+                                    link: "/pistonrings",
                                 },
                                 {
                                     title: "Cylinder Liners",
                                     description: "Durable liners with excellent wear resistance and thermal conductivity characteristics.",
-                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1685792698/meghdoot/4_dl12uk.jpg",
-                                    link: "/products/liners",
+                                    image: "https://res.cloudinary.com/dfvtnrisi/image/upload/v1744877533/cylinder_lrqpnl.jpg",
+                                    link: "/cylinderliners",
                                 },
                             ].map((product, index) => (
                                 <motion.div key={index} variants={fadeIn}>
@@ -197,8 +197,7 @@ const FrontPage = () => {
                                 Why Choose Meghdoot Pistons
                             </motion.h2>
                             <motion.p variants={fadeIn} className="text-muted-foreground max-w-2xl mx-auto">
-                                With over 35 years of experience, we have established ourselves as a trusted global partner for automotive
-                                manufacturers worldwide.
+                                With over 58 years of experience, we have established ourselves as a trusted global supplier for automotive industries worldwide.
                             </motion.p>
                         </motion.div>
 
@@ -261,7 +260,7 @@ const FrontPage = () => {
                                         </div>
                                         <h3 className="text-xl font-bold">Global Warranty Protection</h3>
                                         <p className="text-muted-foreground">
-                                            Comprehensive warranty on all products, backed by excellent customer support in multiple languages.
+                                            Comprehensive fitment Warranty on all products, backed by excellent customer reviews and customer support.
                                         </p>
                                     </CardContent>
                                 </Card>

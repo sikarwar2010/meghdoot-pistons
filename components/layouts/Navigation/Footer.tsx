@@ -14,9 +14,8 @@ export default function Footer() {
                         <div className="flex items-center">
                             <h3 className="text-lg font-bold">Meghdoot Pistons</h3>
                         </div>
-                        <p className="text-sm text-muted-foreground text-justify">
-                            Leading global exporter of precision-engineered automotive components since 1957, serving customers across
-                            50+ countries with premium quality pistons, pins, rings, and cylinder liners.
+                        <p className="text-sm text-muted-foreground text-justify capitalize">
+                        MEGHDOOT PISTONS PRIVATE LIMITED is an ISO 9001:2015 certified Company. It was incorporated in the year 1967 to manufacture Pistons, GUDGEON PINS, CYLINDER LINERS/SLEEVES, CYLINDER BLOCK & PISTON RINGS suitable for Automobiles, Stationary Engine, Tractors, Trucks, Marine Engines, Heavy Duty Machines & Air, Gas and Refrigeration Compressor etc as per International Specifications, Dimensions and Quality requirements using specified Raw materials.
                         </p>
                         <div className="flex space-x-4">
                             <Link href="#" className="text-muted-foreground hover:text-primary">
