@@ -10,7 +10,7 @@ const TopBar = () => {
                 <div className="hidden sm:flex flex-wrap items-center gap-4 mb-1 sm:mb-0 ">
                     <div className="flex items-center gap-1.5">
                         <Phone size={14} className="text-white/80" />
-                        <span>+91 97190 29044 | +91 99971 10005</span>
+                        <span>+91 97190 29044 | +91 97604 15467</span>
                     </div>
                     <div className="flex items-center gap-1.5">
                         <Mail size={14} className="text-white/80" />
@@ -26,7 +26,7 @@ const TopBar = () => {
                     <Link href="/events" className="flex items-center gap-2 text-black dark:text-white transition-colors">
                         <CalendarClock size={14} className="text-white/80" />
                         <span className="font-medium">Latest Event: </span>
-                        <span className="animate-pulse">Auto Expo 2025 - Visit us at Hall 3, Booth 42</span>
+                        <span className="animate-pulse">AutoMechanica, Istanbul - 11 june to 15 June 2025 Hall 10, Booth A160</span>
                     </Link>
                 </div>
             </div>
