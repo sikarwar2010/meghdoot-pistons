@@ -206,7 +206,7 @@ const PistonsPage = () => {
                                     <div className="space-y-4">
                                         <h3 className="text-2xl font-bold">Normal Type Piston</h3>
                                         <p className="text-muted-foreground">
-                                            The standard piston made from aluminum or cast iron, typically used in general engines.
+                                            The standard piston made from aluminum alloy, typically used in general engines.
                                         </p>
                                         <ul className="space-y-2">
                                             <li className="flex items-center gap-2">
