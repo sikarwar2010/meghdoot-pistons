@@ -428,41 +428,36 @@ const PistonsPage = () => {
                                     description:
                                         "Visual inspection ensures the pistons are free from cracks and shrinkage.",
                                 },
+
                                 {
                                     step: "4",
-                                    title: "Heat Treatment",
-                                    description:
-                                        "Controlled heating process for optimized mechanical properties of the piston.",
-                                },
-                                {
-                                    step: "5",
                                     title: "Rough Machining",
                                     description:
                                         "Initial machining removes excess material and prepares the piston for further processing.",
                                 },
                                 {
-                                    step: "6",
+                                    step: "5",
                                     title: "Final Machining",
                                     description: "Final machining ensures precise dimensions and surface finish.",
                                 },
                                 {
-                                    step: "7",
+                                    step: "6",
                                     title: "Deburing",
                                     description:
                                         "Removal of burrs and sharp edges to ensure smooth operation and prevent damage.",
                                 },
                                 {
-                                    step: "8",
+                                    step: "7",
                                     title: "Inspection",
                                     description: "Final inspection ensures the piston meets all quality and dimensional specifications.",
                                 },
                                 {
-                                    step: "9",
+                                    step: "8",
                                     title: "Marking",
                                     description: "Marking with relevant information as per the models.",
                                 },
                                 {
-                                    step: "10",
+                                    step: "9",
                                     title: "Packing",
                                     description: "Proper packaging for safe transportation.",
                                 },

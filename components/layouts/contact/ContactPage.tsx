@@ -123,7 +123,7 @@ export default function ContactPage() {
                                     </div>
                                     <h3 className="text-xl font-bold">Call Us</h3>
                                     <p className="text-muted-foreground">
-                                        Sales: +91 97190 29044 | +91 99971 10005
+                                        Sales: +91 97190 29044 | +91 97604 15467
                                         <br />
                                         Office: 0562 2990513
                                     </p>

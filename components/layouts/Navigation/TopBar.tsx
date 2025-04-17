@@ -26,7 +26,7 @@ const TopBar = () => {
                     <Link href="/events" className="flex items-center gap-2 text-black dark:text-white transition-colors">
                         <CalendarClock size={14} className="text-white/80" />
                         <span className="font-medium">Latest Event: </span>
-                        <span className="animate-pulse">AutoMechanica, Istanbul - 11 june to 15 June 2025 Hall 10, Booth A160</span>
+                        <span className="animate-pulse">AutoMechanika, Istanbul - 11 june to 15 June 2025 Hall 10, Booth A160</span>
                     </Link>
                 </div>
             </div>

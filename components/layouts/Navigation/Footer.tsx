@@ -2,7 +2,7 @@
 import React from 'react';
 import Link from "next/link"
 import { Mail, Phone, MapPin, ExternalLink } from "lucide-react"
-import { FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 
 export default function Footer() {
@@ -25,6 +25,10 @@ export default function Footer() {
                             <Link href="#" className="text-muted-foreground hover:text-primary">
                                 <FaTwitter className="h-5 w-5" />
                                 <span className="sr-only">Twitter</span>
+                            </Link>
+                            <Link href="https://www.instagram.com/pistonsindia?igsh=ZWJwdmQ5anl5OHpx&utm_source=qr" className="text-muted-foreground hover:text-primary">
+                                <FaInstagram className="h-5 w-5" />
+                                <span className="sr-only">Instagram</span>
                             </Link>
                             <Link href="#" className="text-muted-foreground hover:text-primary">
                                 <FaLinkedin className="h-5 w-5" />
