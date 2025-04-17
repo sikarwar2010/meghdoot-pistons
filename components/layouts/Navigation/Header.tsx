@@ -65,7 +65,7 @@ export default function Header() {
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <span className="text-2xl font-semibold font-sans mr-2">Meghdoot Pistons Pvt Ltd</span>
+                        <span className="text-2xl font-semibold font-sans mr-2">Meghdoot Pistons Private Limited</span>
                     </motion.div>
                 </Link>
 

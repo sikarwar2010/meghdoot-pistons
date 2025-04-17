@@ -286,7 +286,7 @@ const AboutPage = () => {
                                     },
                                     {
                                         year: "1969",
-                                        title: "Begining",
+                                        title: "Beginning",
                                         description: "Regular production of pistons sutaible for gensets.",
                                     },
                                     {
