@@ -297,12 +297,12 @@ const AboutPage = () => {
                                     {
                                         year: "1980",
                                         title: "OEM supplying",
-                                        description: "Started supplying pistons to mutliply OEMs",
+                                        description: "Started supplying pistons to multiple OEMs",
                                     },
                                     {
                                         year: "1985",
                                         title: "No.1 choice",
-                                        description: "Best choice for Pistons to Marchant Exporters",
+                                        description: "Became best choice of Merchant exporters for Pistons",
                                     },
                                     {
                                         year: "1991",
@@ -312,7 +312,7 @@ const AboutPage = () => {
                                     {
                                         year: "2001",
                                         title: "Modern Technology & Certification",
-                                        description: "Introduction of CNC's Lathes & ISO 9001:2000 certification",
+                                        description: "Introduction of CNC's Lathes & Quality Certification",
                                     },
                                     {
                                         year: "2010",
