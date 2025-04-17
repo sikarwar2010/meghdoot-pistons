@@ -112,7 +112,7 @@ const PistonRingsPage = () => {
                         >
                             <h2 className="text-3xl font-bold">Product Overview</h2>
                             <p className="text-muted-foreground">
-                                Meghdoot Pistons manufactures premium piston rings that are exported to automotive manufacturers
+                                Meghdoot Pistons premium piston rings that are exported to automotive manufacturers
                                 worldwide. Our rings are designed to provide optimal sealing, oil control, and heat transfer while
                                 minimizing friction and wear.
                             </p>
@@ -124,19 +124,21 @@ const PistonRingsPage = () => {
                             <div className="space-y-2">
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>PVD coating for reduced friction</span>
+                                    <span>Applications:	All types of Piston Engines</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Superior sealing properties</span>
+                                    <span>Diameter sizes:	10 – 300mm</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Excellent oil control</span>
+                                    <span>Materials:High grade cast iron alloy / special alloy steel / S.G. iron</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-primary" />
-                                    <span>Enhanced durability and longevity</span>
+                                    <span>Construction:
+                                        Compressor Rings- Rectangular, Keystone, Taper periphery, Bevelled, Napier, etc. and Oil control Rings-Plain, bevelled, coil spring loaded, duaflex, 3 flex, etc.
+                                    </span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-primary" />
