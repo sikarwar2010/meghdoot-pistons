@@ -322,7 +322,7 @@ const AboutPage = () => {
                                     {
                                         year: "2017",
                                         title: "Export Initiatives",
-                                        description: "Venturing into international markets, by particpating in various international trade fairs",
+                                        description: "Venturing into international markets, by participating in various international trade fairs",
                                     },
                                     {
                                         year: "2023",
